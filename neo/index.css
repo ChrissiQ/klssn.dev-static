@@ -1,0 +1,93 @@
+div.input, legend{
+	margin-left: 150px;
+	padding: 5px;
+}
+div.form{
+	clear: both;
+}
+label{
+	text-align: right;
+	width: auto;
+}
+legend{
+	padding: 5px;
+}
+
+thead button{
+	background-color: transparent;
+}
+
+h2{
+	font-size: 1.2em;
+}
+
+/* Table formatting */
+table, table tr, table tr td{
+	vertical-align: middle;
+}
+tbody tr{
+	background-color: #EFEFFF;
+	font-size: 1.2em;
+}
+tbody tr.addnew{
+	background-color: white;
+}
+
+/* Zebra striping */
+.odd{
+	background-color: #E0E0FF;
+}
+
+/* Turn lists into columns */
+div.list{
+	width: 40em;
+	float: left;
+	padding: 10px;
+}
+
+/* Buttons */
+button.open-form, button.close-form{
+	float: left;
+}
+button{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/* Clearfix */
+.clearfix{
+	clear: both;
+}
+
+/* Infocolumn */
+section#infoColumn{
+	width: 40em;
+	float: left;
+	padding: 10px;
+}
+
+/* Link colours.  */
+.link a:link, 
+.link a:visited,
+.link a:active{
+	color: #19962d;
+	text-decoration: none;
+	font-weight: bold;
+}
+.link a:hover, 
+.link a:visited:hover,
+.link a:active:hover{
+	color: #19962d;
+}
+
+/* Unavailable link colors */
+.unavailable .link a:link, 
+.unavailable .link a:hover, 
+.unavailable .link a:active,
+.unavailable .link a:visited, 
+.unavailable .link a:visited:hover,
+.unavailable .link a:active:hover{
+	color: red;
+	text-decoration: none;
+	font-weight: normal;
+}

@@ -1,0 +1,11 @@
+label{
+	width: 8em;
+	display: inline-block;
+	text-align: right;
+}
+fieldset{
+	width: 400px;
+}
+div#errors{
+	color: red;
+}

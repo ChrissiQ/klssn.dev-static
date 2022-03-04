@@ -1,0 +1,155 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	text-align: center;
+}
+h2{
+	padding-bottom: 1em;
+	border-bottom: 1px solid rgb(200,200,200);
+}
+
+/* Form */
+div#form label{
+	width: 8em;
+	display: inline-block;
+	text-align: right;
+}
+div#form legend{
+	text-align: left;
+}
+div#form{
+	width: 20em;
+	margin: auto;
+}
+div#form fieldset{
+	border: 1px solid rgba(0,0,0,0.2);
+	background-color: rgb(225,225,220);
+}
+div#form div{
+	width: 12em;
+	text-align: center;
+}
+div#form input{
+	width: 10em;
+}
+input{		margin: 5px 0;}
+
+
+/* Table */
+table#products{
+	border-collapse: collapse;
+	margin: 2em auto;
+	border: 2px solid rgba(100,100,100,0.3);
+	border-radius: 10px;
+}
+table#products td{					padding: 0.3em; }
+table#products thead td{			background-color: rgb(225,225,220); }
+table#products tbody td{			border: 1px solid rgba(200,200,200,0.1); }
+table#products tbody td div{		position: absolute;}
+table#products tr:nth-child(even) td{ background-color: rgba(250,190,200,0.2);
+}
+
+table#products tbody td div a{
+	padding: 1em;
+	border: 1px solid rgba(0,0,0,0.5);
+	border-radius: 5px;
+	background-color: white;
+}
+
+
+/* Submission form */
+.errorField{outline: 3px solid rgba(255,0,0,0.5);}
+.errorMsg{	
+	color: red;
+	padding: 5px;
+	position: absolute;
+	margin-top: -2em;
+	margin-left: 20em;
+}
+
+
+/* Dialogs */
+.dialog{
+	display: none;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+
+/* Name dialog */
+#name-dialog{
+	text-align: center;
+}
+#name-dialog input{
+	float: none;
+	display: inline-block;
+}
+#name-dialog .ui-button{
+	float: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	top: -0.15em;
+}
+#name-dialog .ui-button span{
+	margin: 0;
+	padding: 0.15em 0.4em;
+}
+#name-dialog>div{
+	padding-bottom: 1em;
+}
+
+
+/* Form dialog */
+#form-dialog{
+	color: rgb(200,50,50);
+}
+
+/* Bouncy image */
+#bouncy-image{
+	position: relative;
+	width: 200px;
+	display: block;
+}
+#bouncy-image img{
+	display: block;
+}
+#bouncy-image>div{
+	position: absolute;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-top: -200px;
+	margin-left: 50px;
+}
+#bouncy-image>div>span{
+	padding: 0.5em 1em;
+	display: block;
+}
+
+/* Create speech bubble bottom point */
+#bouncy-image>div>div{
+	width: 15px;
+	height: 15px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	background-color: white;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /* IE 9 */
+	-webkit-transform:rotate(45deg); /* Safari and Chrome */
+	position: absolute;
+	margin-left: 20px;
+	z-index: 4;
+	margin-top: -7px;
+}
+
+div#footer{
+	padding: 1em;
+	font-size: 1.5em;
+	color: rgb(200,200,200);
+	background-color: rgba(0,25,50,0.9);
+	text-align: center;
+}

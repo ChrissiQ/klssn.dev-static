@@ -1,0 +1,34 @@
+body{
+	text-align: center;
+}
+	label{
+	width: 8em;
+	display: inline-block;
+	text-align: right;
+}
+div#errors ul li{
+	color: red;
+	font-weight: bold;
+}
+div{
+	padding: 10px;
+}
+h1, h2, h3{
+	text-align: center;
+}
+div#form{
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+}
+form{
+	margin: 0 auto;
+	display: inline-block;
+	text-align: left;
+}
+fieldset{
+	padding: 40px;
+}
+div#buttons{
+	text-align: center;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Job Application Form</title>
+    </head>
+    <style type="text/css">
+    label{
+        float: left;
+        width: 200px;
+        margin-right: -20px;
+    }
+    div{
+        margin-left: 200px;
+    }
+    p{
+        padding: 5px;
+    }
+    
+    </style>
+    <body>
+        <fieldset>
+            <legend><h1>Job Application Form</h1></legend>
+            <form method="post" action="form.php">
+                <input type="hidden" name="hidden1" value="Job application for SAIT Programmer" />
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" />
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" />
+                </p>
+                <p>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" max="125" min="18" style="width: 3em;" />
+                </p>
+                
+                <p>
+                    <label for="job">What type of job are you looking for?</label>
+                    <div>
+                        <input type="radio" name="job" value="janitor" checked="checked">Janitor<br />
+                        <input type="radio" name="job" value="programmer">Programmer<br />
+                        <input type="radio" name="job" value="instructor">Instructor<br />
+                    </div>
+                </p>
+                
+                <p>
+                    <label for="languages">What programming languages do you know?</label>
+                    <div>
+                        <input type="checkbox" name="html" value="html" />HTML<br />
+                        <input type="checkbox" name="php" value="php" />PHP<br />
+                        <input type="checkbox" name="javascript" value="javascript" />Javascript<br />
+                    </div>
+                </p>
+                
+                <p>
+                    <label for="contact">How do you want to be contacted?</label>
+                    <select name="contact" id="contact">
+                        <option value="mail">Mail</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <label for="daysofweek">What days of week are you available for interview?</label>
+                    <select name="daysofweek[]" multiple="multiple" size=5>
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="friday">Friday</option>
+                    </select>
+                    
+                </p>
+                
+                
+                <p>
+                    <label for="address">Address:</label>
+                    <textarea cols="25" rows="5">
+                    
+                    </textarea><br />
+                    
+                </p>
+                
+                <input type="submit" name="submit" value="Send!" />
+                
+                <input type="reset" name="reset" value="Clear!" />
+                <p>Privacy policy:  I will not share your information with anyone.</p>
+            
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+body{
+	padding: 0;
+	margin: 0;
+	overflow: scroll;
+}
+div#puzzle-pieces{
+	position: relative;
+	display: inline-block;
+	line-height: 0;
+	white-space: nowrap;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,1);
+}
+div#puzzle-pieces img{
+	position: relative;
+	vertical-align: bottom;
+	outline: 2px solid rgba(255,255,0,0.9);
+	display: inline-block;
+}
+#upload{
+	text-align: center;
+	margin: 0 auto;
+	min-width: 20em;
+}
+#drag{
+
+	/* size */
+	width: 14em;
+	height: 14em;
+
+	/* decoration */
+	border: 3px dashed rgb(200,200,200);
+
+	/* colours */
+	background-color: rgb(240,240,240);
+
+	/* spacing */
+	margin: 50px auto;
+
+}
+
+#drag .inside-drag{
+	margin-top: 6em;
+}
+label{
+	display: inline-block;
+	width: 6em;
+	text-align: right;
+}
+#size{
+	margin: 0 auto;
+	display: inline-block;
+	max-width: 14em;
+
+}
+#size input{
+	width: 3em;
+}
+#size .flow{
+	display: inline-block;
+}
+.error{
+	color: red;
+}
+input[type=file]{
+	display: none;
+}
+#winner{
+	display: none;
+	text-align: center;
+	padding: 2em;
+}

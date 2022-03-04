@@ -1,0 +1,332 @@
+/* Canvas background used with permission from:
+http://lostandtaken.com/blog/2012/1/4/30-free-seamless-background-textures.html
+*/
+/* Floral background used with permission from:
+http://www.dinpattern.com/2010/02/13/pink-lines/
+*/
+
+/* General styles */
+body{
+	font-family: "Droid Sans", sans-serif;
+	background: url('../images/flower_background_pink.png');
+}
+h1,h2{
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+	font-family: "Oswald", helvetica, sans-serif;
+	letter-spacing: 0.05em;
+}
+h1 	{	font-size: 4em; }
+h2 	{	font-size: 2em; }
+h3	{	font-size: 1.5em; }
+img {	max-width: 100%; }
+p,li{	line-height: 1.5em; }
+strong{	font-weight: bold;}
+em 	{	font-style: italic;}
+.footnote{
+	font-size: 0.8em;
+	margin-top: 1em;
+}
+
+
+/* Form */
+/* */
+fieldset{
+	border: 2px outset rgba(128,128,128, 0.5);
+	padding: 1em;
+	margin: 2em 0;
+	width: 30em;
+	background-color: rgba(255,255,255,0.3);
+}
+label{
+	display: inline-block;
+	width: 8em;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+}
+textarea{
+	width: 20em;
+	height: 10em;
+}
+
+/* Article */
+/* */
+article{
+	padding: 4em 2em;
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+article p{
+	text-indent: 2em;
+	padding: 0.5em 0;
+}
+fieldset p{
+	text-indent: 0;
+	padding: 0.5em;
+}
+article ol{
+	list-style-type: decimal;
+	padding-left: 4em ;
+}
+article img{
+	margin: 2em 0;
+}
+article a{
+	text-decoration: underline;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+
+	/* 	Adds a pointer where I've taken one away by not including a
+		href in one of the links, to avoid it jumping to the top of
+		the page. */
+	cursor: pointer;
+}
+a:hover{
+	color: #555;
+}
+
+#container{
+	margin: 0 auto;
+	max-width: 960px;
+	background: url('../images/canvas-lighter.jpg') white;
+	box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+/* Article date */
+#article-date{
+	font-family: 'Raleway', sans-serif;
+
+	/* Make short underline */
+	display: inline-block;
+	border-bottom: 1px dotted rgba(0,0,0,0.5);
+
+	margin: 1em;
+	font-size: 0.8em;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+
+	/* Override the "article p" style */
+	padding: 0;
+	text-indent: 0;
+}
+
+#article-title{
+	/* 	This border is the bottom of the header, but I moved the header 
+		down half the line height so it is in the middle of this border.*/
+	border-bottom: 2px solid rgba(0,0,0,0.8);
+}
+
+#article-title h2{
+	/* 	Move header down half a line so it is positioned ontop of the middle
+		of the line.  Make it inline so that it is smaller.
+	*/
+	display: inline;
+	position: relative;
+
+	/* Extra 0.0.5em accounts for line-height */
+	top: 0.55em;
+	left: 1.5em;
+	padding: 0 1.3em;
+
+	/* 	Solid background to obscure border behind it.
+		Border radius to make the line less visible. */
+	background: url('../images/loops.png'), url('../images/loops.png'), url('../images/canvas-lighter.jpg') white;
+	border-radius: 20px;
+	background-repeat: no-repeat, no-repeat, repeat;
+
+	/* Left loop decoration: aligned left and middle */
+	/* Right loop decoration: aligned right and middle */
+	/* Canvas background: aligned to try to match the pattern */
+	background-position: 
+		100% 	50%, 
+		0 		50%, 
+		-6.5em -1.5em;
+}
+
+
+
+.ingredients{
+	float: right;
+	padding: 0 1em;
+	margin: 0 1em;
+	width: 15em;
+}
+
+.ingredients hr{
+	background-color: rgba(0,0,0,0.5);
+	height: 1px;
+	border: 0;
+	width: 80%;
+}
+
+.ingredients h3{
+	font-weight: bold;
+	text-align: center;
+	font-size: 1em;
+}
+
+.ingredients ul{
+	padding: 2em;
+}
+
+
+
+/* Styling for lists */
+ul{
+	list-style-image: url('../images/hollow-bullet-small.png');
+}
+li{
+	padding: 0.25em 0;
+}
+
+
+
+/* Style for nav list */
+
+nav{
+	margin-top: 10px;
+	font-weight: bold;
+	float: right;
+}
+nav ul li{
+	width: 9em;
+
+	/* Extend the margin around the list decoration.  */
+	margin-left: 1em;
+}
+nav ul ul{
+	padding: 5px;
+
+	/* Align with outer list instead of inset to the right.  */
+	margin-left: -1.3em;
+
+	/* Background and box style */
+	background: url('../images/canvas-lighter.jpg') white;
+	opacity: 0.9;
+	border: 1px outset white;
+}
+nav ul{
+	margin: 0;
+	margin-left: 2em;
+}
+nav ul ul li{
+	list-style-image: url('../images/filled-bullet-small.png')
+}
+nav ul ul a{
+	/* Make nested list links un-bold.  */
+	font-weight: normal;
+}
+nav ul ul{
+	/* Nested list needs a filled bullet.  */
+	list-style-image: url('../images/filled-bullet-small.png');
+}
+
+/* Dropdown functionality */
+/* */
+nav ul>li>ul{
+	display: none;
+}
+nav ul li{
+	float: left;
+}
+nav ul ul{
+	position: absolute;
+}
+nav ul>li>ul>li{
+	float: none;
+}
+/* Javascript uses this to open menus. */
+ul.open{
+	display: block;
+}
+
+/* More recipes */
+/* */
+#more-recipes{
+	background: url('../images/noise-background.jpg') white;
+	overflow: hidden;
+	padding: 20px 10px;
+	text-align: center;
+	display: inline-block;
+}
+#more-recipes h2{
+	padding: 1em 0;
+}
+
+/* Outer div only, of each image */
+#more-recipes>div{
+	width: 33.333%;
+	float: left;
+}
+
+/* 	Inner div can have margins since outer div is perfect thirds,
+	now images will scale accordingly to fit.  */
+#more-recipes>div div{
+	margin: 2em;
+}
+
+/* Recipe name needs some alignment.  */
+#more-recipes>div div p{
+	margin: 10px;
+	text-align: center;
+}
+#more-recipes div img{
+
+	/* inline-block removes space at bottom of image.  */
+	display: inline-block;
+	border: 1px solid black;
+}
+
+#more-recipes a{
+	text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+#more-recipes a img{
+
+	box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+#more-recipes a:hover img{
+	box-shadow: 0 0 30px rgba(0,0,0,0.5);
+	border: 1px outset #CCC;
+}
+
+/* Header */
+header{
+	padding-top: 1px;
+	margin-bottom: 50px;
+}
+header img{
+	float: left;
+}
+header h1{
+	font-family: Gabriela, serif;
+	font-variant: small-caps;
+	text-align: center;
+	line-height: 1.5em;
+	margin-top: 100px;
+}
+header h2{
+	text-align: center;
+	font-family: Gabriela, serif;
+	font-weight: normal;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	color: rgba(0,0,0,0.5);
+	font-variant: small-caps;
+}
+
+footer{
+	font-family: "Oswald", helvetica, sans-serif;
+	border-top: 2px solid black;
+
+	/* Spacing and alignment */
+	line-height: 1.5em;
+	letter-spacing: 0.15em;
+	padding: 2em 5em;
+
+	/* Inset text appearance on dark background.  */
+	background: url('../images/noise-background-dark.jpg') #555;
+	color: white;
+	text-shadow: -1px -1px 1px black;
+}

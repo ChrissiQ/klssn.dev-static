@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="normalize.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Budget Calculator</title>
+</head>
+<body>
+  <form id="form-budget">
+    <label for="input-spent">Spent this month:</label>
+    <input id="input-spent" type="number" step=".01">
+    <p>You have <strong>$<span id="output-available"></span></strong> left to spend today.</p>
+  </form>
+  <script type="text/javascript">
+
+    function getSpent() {
+      return spentElement.value;
+    };
+
+    var spentElement = document.getElementById('input-spent');
+    var day = new Date().getDate();
+    var available = 25 * day;
+    var outputAvailableElement = document.getElementById('output-available');
+
+    document.getElementById('form-budget').addEventListener('submit', function(event) {
+      event.preventDefault();
+    });
+
+    spentElement.addEventListener('change', function() {
+      outputAvailableElement.innerHTML = (available - spentElement.value).toFixed(2);
+    });
+
+  </script>
+</body>
+</html>

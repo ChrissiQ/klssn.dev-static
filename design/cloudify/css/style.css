@@ -1,0 +1,182 @@
+
+/* Global */
+body{
+    background-color: rgb(135,197,229);
+    background-image: url('../images/head.png'), url('../images/tiling-background.png'); 
+    background-repeat: no-repeat, repeat-x;
+    background-position: 50% 50px, top left;
+    font-family: sans-serif;
+}
+
+/* Reset.css took out some default styles.  Setting some back, here. */
+em{
+    font-style: italic;
+}
+strong{
+    font-weight: bold;
+}
+h2{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* Links */
+a{
+    color: rgba(28,28,28,0.8);
+}
+a:hover{
+    text-shadow: 0 0 5px rgb(255,255,255);
+}
+
+/* The width of the site */
+#container{
+    width: 900px;
+    margin: auto;
+}
+
+/* Allows the rest of the header image to show.  */
+#header{
+    margin-top: 160px;
+}
+section{
+    padding: 0;
+    margin: 0;
+}
+li{
+    padding: 5px;
+    list-style-type: circle;
+    margin-left: 10px;
+}
+p img{
+    box-shadow: 5px 5px 10px rgba(128,128,128,0.5);
+    margin: 20px;
+}
+
+/* Logo */
+#logo{
+    float: left;
+    font-size: 5em;
+}
+#logo a{
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px white;
+}
+
+/* Nav */
+#nav{
+    margin-top: 50px;
+    font-size: 1.5em;
+    bottom: 0;
+    float: right;
+    color: rgb(128,128,128);
+    border-bottom: 5px solid rgba(0,0,0,0.25);
+    text-align: right;
+    padding: 0 50px 0 150px;
+}
+#nav a{
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    text-decoration: none;
+}
+#nav a:hover{
+    color: rgb(0,0,0);
+}
+
+
+/* Tertiary Nav */
+#tertiary-nav{
+    margin-left: 200px;
+    text-align: right;
+}
+#tertiary-nav span{
+    padding: 8px;
+}
+#tertiary-nav a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+
+/* Tagline */
+#tagline{
+    margin: 70px;
+    margin-left: 25px;
+    padding-top: 25px;
+    clear: both;
+    color: rgba(0,0,0,0.5);
+}
+
+/* Main */
+#main{
+    background-image: url('../images/birds.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+
+/* Sections */
+#main section{
+    float: left;
+    margin: 50px 50px 50px 300px;
+    width: 600px;
+    box-shadow: 5px 5px 10px rgba(128,128,128,0.5);
+}
+#main section h2{
+    margin-left: -30px;
+    background: rgba(255,255,255,0.5);
+    padding: 20px;
+    border-bottom: 5px solid rgba(0,0,0,0.25);
+}
+#main section div{
+    background: rgba(255,255,255,0.75);
+    padding: 20px;
+}
+
+
+/* Footer */
+#footer{
+    background-image: url('../images/grass.png');
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    clear: both;
+    z-index: 10;
+    height: 20em;
+}
+#footer p{
+    text-align: right;
+    margin: auto;
+    padding: 1em;
+    width: 960px;
+    border-top: 5px solid rgba(0,0,0,0.25);
+    margin-top: 500px;
+    overflow: hidden;
+    
+}
+
+/* Images */
+/*/ To stick the image to the bottom of the page,
+ *  I used jQuery. */
+
+#butterfly-image{
+    position: absolute;
+    right: 100px;
+    /* bottom: $(document).height() - 300  (via JS) */
+    z-index: -1;
+}
+
+/* Form */
+form label{
+    float: left;
+    width: 8em;
+}
+
+/* Indented info paragraphs like address, phone, email */
+.address, .phone, .email{
+    padding: 15px;
+}

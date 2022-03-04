@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Neopets link timer</title>
+<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+<link rel="stylesheet" href="index.css">
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cookie.js"></script>
+<script type="text/javascript" src="form.js"></script>
+<script type="text/javascript" src="jquery.validate.min.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28143036-1']);
+  _gaq.push(['_setDomainName', 'klssn.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<section id="infoColumn">
+	<h2>Welcome to Neopets-linktimer 0.62 alpha.</h2>
+	<p><em>New! Prettier!</em></p>
+	<p>Upcoming features:</p>
+	<ul>
+		<li>Plan for 0.7: Draggable UI (move lists/links around the page)</li>
+		<li>Plan for 0.8: User login (no more cookies)</li>
+		<li>Plan for 1.0 beta: Better design</li>
+	</ul>
+	
+	<p>Requires:</p>
+	<ul>
+		<li>A modern browser with Javascript enabled</li>
+	</ul>
+	<p>Bugs:</p>
+	<ul>
+		<li>Right-clicking or middle-clicking a link does not register it as clicked (use button then).</li>
+		<li>Snowager timer is completely wrong and unpredictable.</li>
+		<li>Others? <a href="mailto:cmkla.spam.sse@gmail.com">Email me.</a> (remove .spam.)</li>
+	</ul>
+	<p>Issues:</p>
+	<ul>
+		<li>Cannot remove lists yet.</li>
+	</ul>
+	<p>Changelog:</p>
+	<ul>
+		<em>0.62</em> (January 10, 2012):
+		<li>Timers are more efficient (less lag for some people)</li>
+		<li>Fixed bug where you could remove the title of a list and never get it back</li>
+		<li>Fixed bug where a link deleted with time left would roll over to another link if created during the time left.</li><br />
+		
+		<em>0.6</em> (January 4, 2012):
+		<li>Uses browser storage instead of cookies, so lists can be extremely large.</li>
+		<li>Add your own lists and links.</li>
+		<li>Rename lists.</li>
+		<li>Edit the default list.</li>
+		<li>Sort backwards and forwards.</li><br />
+		
+		<em>0.52</em> (Oct 28 2011):
+		<li>Improved responsiveness and cleaned up code</li>
+		<li>Sort by category &amp; use cookies to remember your sort.</li>
+	</ul>
+	
+</section>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

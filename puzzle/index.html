@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Puzzle</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<script src="jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<link type="text/css" rel="stylesheet" href="index.css" />	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-28143036-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+
+<body>
+	<div id="upload" title="Welcome to Puzzle Maker">
+
+		<div id="drag"><div class="inside-drag">Drag an image here, or click to open.</div></div>
+
+		<div id="size">
+
+			<div class="message">
+				16 pieces: easy
+			</div>
+			<br />
+			<div class="flow">
+				<label for="rows">Rows:</label>
+				<input id="rows" type="number" value=4></input>
+			</div>
+
+			<div class="flow">
+				<label for="columns">Columns:</label>
+				<input id="columns" type="number" value=4></input>
+			</div>
+			<input type="file" />
+		</div>
+
+	</div>
+
+	<div id="winner" title="Winner!">You win!</div>
+	<canvas id="puzzle"></canvas>
+	<div id="puzzle-pieces"></div>
+
+</body>
+
+</html>

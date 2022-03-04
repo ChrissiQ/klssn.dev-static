@@ -1,0 +1,27 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+img{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+div{
+	width: 10000px;
+	padding: 0;
+	margin: 0;
+	margin-top: -5px;
+}
+div#above{
+	background-color: white;
+}
+
+div#below{
+	background-color: black;
+}
+a{
+	border: 0;
+}
